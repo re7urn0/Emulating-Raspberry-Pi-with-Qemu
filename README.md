@@ -1,7 +1,13 @@
 # Emulating Raspberry Pi with Qemu
-
+Linux version:
+```
+$ lsb_release -a
+Distributor ID: Ubuntu
+Description:    Ubuntu 20.04.4 LTS
+Release:        20.04
+Codename:       focal
+```
 ## Preparing Files
-
 Download and build Qemu-7.2.0:
 
 ```bash
