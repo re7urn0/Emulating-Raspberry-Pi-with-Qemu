@@ -112,7 +112,8 @@ sudo qemu-system-arm -kernel kernel-qemu-4.14.79-stretch \
 -append " root=/dev/sda2 panic=1 rootfstype=ext4 rw " \
 -hda raspbian.qcow2 \
 -net nic \
--net user,hostfwd=tcp::5555-:22
+-net user,hostfwd=tcp::5555-:22 \
+-net tap,ifname=tap0,script=no,downscript=n
 ```
 
 Starting the virtual machine:
