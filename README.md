@@ -113,7 +113,7 @@ sudo qemu-system-arm -kernel kernel-qemu-4.14.79-stretch \
 -hda raspbian.qcow2 \
 -net nic \
 -net user,hostfwd=tcp::5555-:22 \
--net tap,ifname=tap0,script=no,downscript=n
+-net tap,ifname=tap0,script=no,downscript=no
 ```
 
 Starting the virtual machine:
@@ -148,7 +148,7 @@ pi@raspberrypi:~$ sudo shutdown -h now
 Increase the disk size:
 
 ```bash
-$ qemu-img resize rpitest.qcow2 +4G
+$ qemu-img resize raspbian.qcow2 +4G
 $ ./start.sh
 ...
 
